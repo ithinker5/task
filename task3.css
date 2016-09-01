@@ -1,0 +1,115 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 62.5%;
+    font-family: "Hiragino Sans GB W3";
+    color: #fff;
+}
+.container{
+    width: 100%;
+    max-width:640px;
+    margin: 0 auto;
+    background-color: #68cdd5;
+}
+.title{
+    width: 100%;
+    background-color: #22292c;
+    position: relative;
+}
+.return{
+    width: 12.9%;
+    font-size: 2.6em;
+	position: absolute;
+	top: 33%;
+	left: 2.5%;
+}
+.return img{
+	width: 20%;
+    max-width: 20px;
+}
+.return span{
+	width: 80%;
+	display: block;
+	position: absolute;
+	top: 4%;
+	left: 30%;
+}
+.title h1{
+    font-size: 3.4em;
+	font-weight: normal;
+    text-align: center;
+	padding: 4% 0;
+}
+.more{
+    width: 5.7%;
+    position: absolute;
+	top: 40%;
+	right: 2.5%;
+}
+.more img{
+    width: 100%;
+    max-width: 47px;
+}
+/*顶部布局完成，开始中部布局*/
+.main{
+    width: 100%;
+    position: relative;
+}
+.back{
+    width: 8.4%;
+    max-width: 54px;
+    padding-left:5.4%;
+    padding-top:3.3%;
+}
+.logo{
+    width: 28%;
+    display: block;
+    margin-left: 31%;
+    padding-top: 6.5%;
+}
+.main p{
+    width: 69%;
+    font-size: 3em;
+    margin: 0 auto;
+    padding-top: 23%;
+    line-height: 180%;
+}
+/*中部返回和logo以及正文内容完成*/
+.content{
+    width: 100%;
+    padding-top: 7.5%;
+}
+.content p{
+    font-family: "Adobe heiti Std R";
+    padding-top: 10%;
+    font-size: 2.4em;
+}
+.contact{
+    width: 19.5%;
+    float: left;
+    padding-left: 21%;
+    padding-top: 12%;
+}
+.contact img{
+    width: 100%;
+    max-width: 84px;
+    padding-left: 21.7%;
+}
+.grape{
+    width: 19.5%;
+    float: right;
+    padding-right: 21%;
+    padding-top: 12%;
+}
+.grape img{
+    width: 100%;
+    max-width: 84px;
+    padding-right: 19.2%;
+}
+.block{
+    clear: both;
+    padding-bottom: 15%;
+}
