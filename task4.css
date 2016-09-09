@@ -27,7 +27,7 @@ body{
     float: left;
     width: 40%;
     text-align: center;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 .title-right{
     float: right;
@@ -44,7 +44,7 @@ body{
 }
 .title-right span{
     float: right;
-    font-size: 3.6em;
+    font-size: 3.2em;
     padding-right: 13.81%;
 }
 .number{
