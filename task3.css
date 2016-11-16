@@ -1,115 +1,159 @@
 @charset "utf-8";
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+
+.clearfloat {
+    zoom: 1;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: --;
+    visibility: hidden;
+    height: 0;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #f8f6f5;
+}
+
+body {
 	font-size: 62.5%;
     font-family: "Hiragino Sans GB W3";
     color: #fff;
 }
-.container{
+
+.wrap {
     width: 100%;
-    max-width:640px;
-    margin: 0 auto;
     background-color: #68cdd5;
 }
-.title{
-    width: 100%;
+
+.public-header {
+    height: 88px;
     background-color: #22292c;
+}
+
+.public-container {
     position: relative;
+    width: 94.53%;
+    height: 88px;
+    margin: 0 auto;
 }
-.return{
-    width: 12.9%;
+
+.public-header .header-back {
+    float: left;
+    width: 3.3%;
+    margin-top: 23px;
+}
+
+.public-header .header-back a {
+    width: 20px;
+    height: 36px;
+    background: url("../task3-files/header-back.png");
+}
+
+.public-header span {
+    float: left;
+    margin-top: 23px;
+    margin-left: 2.1%;
     font-size: 2.6em;
-	position: absolute;
-	top: 33%;
-	left: 2.5%;
+    color: #f8f6f5;
 }
-.return img{
-	width: 20%;
-    max-width: 20px;
-}
-.return span{
-	width: 80%;
-	display: block;
-	position: absolute;
-	top: 4%;
-	left: 30%;
-}
-.title h1{
+
+.public-header h1{
     font-size: 3.4em;
-	font-weight: normal;
     text-align: center;
-	padding: 4% 0;
+    font-weight: normal;
+	color: #f8f6f5;
+    padding: 23px 0;
 }
-.more{
-    width: 5.7%;
+
+.public-header .header-r {
     position: absolute;
-	top: 40%;
-	right: 2.5%;
+    top: 38px;
+    right: 0;
+    font-size: 0;/*清除inline-block的默认间距*/
 }
-.more img{
-    width: 100%;
-    max-width: 47px;
+
+.public-header .header-r .btn {
+    display: inline-block;
+    margin-left: 5px;
+    width: 9px;
+    height: 9px;
+    background: #f8f6f5;
+    border-radius: 50%;
 }
 /*顶部布局完成，开始中部布局*/
 .main{
     width: 100%;
     position: relative;
 }
+
 .back{
     width: 8.4%;
     max-width: 54px;
-    padding-left:5.4%;
-    padding-top:3.3%;
+    padding-left:5.5%;
+    padding-top: 3.1%;
 }
-.logo{
-    width: 28%;
-    display: block;
-    margin-left: 31%;
-    padding-top: 6.5%;
+
+.main-ptteng {
+    position: absolute;
+    left: 13.75%;
+    top: 18.12%;
 }
-.main p{
-    width: 69%;
-    font-size: 3em;
+
+.main-logo {
+    width: 28.28%;
+    max-width: 181px;
     margin: 0 auto;
-    padding-top: 23%;
+    padding-top: 6.56%;
+}
+
+.main .text-info {
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 18.75%;
+    padding-bottom: 27.2%;
+    font-size: 3em;
+    font-family: "Hiragino Sans GB";
     line-height: 180%;
+    color: #fff;
 }
+
 /*中部返回和logo以及正文内容完成*/
-.content{
+
+.footer {
     width: 100%;
-    padding-top: 7.5%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 31.25%;
 }
-.content p{
-    font-family: "Adobe heiti Std R";
-    padding-top: 10%;
-    font-size: 2.4em;
-}
-.contact{
-    width: 19.5%;
+
+.icon-footer {
     float: left;
-    padding-left: 21%;
-    padding-top: 12%;
+    width: 50%;
+    text-align: center;
 }
-.contact img{
-    width: 100%;
-    max-width: 84px;
-    padding-left: 21.7%;
+
+.footer img {
+    width: 27.5%;
+    max-width: 88px;
+    margin-left: 36.25%;
 }
-.grape{
-    width: 19.5%;
-    float: right;
-    padding-right: 21%;
-    padding-top: 12%;
-}
-.grape img{
-    width: 100%;
-    max-width: 84px;
-    padding-right: 19.2%;
-}
-.block{
-    clear: both;
-    padding-bottom: 15%;
+
+.footer p {
+    font-size: 2.4em;
+    line-height: 5.4em;
+    text-align: center;
+    color: #fff;
 }
